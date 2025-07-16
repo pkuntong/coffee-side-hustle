@@ -18,10 +18,6 @@ A simple, effective affiliate marketing website focused on coffee equipment. Bui
 3. Enable GitHub Pages in repository settings
 4. Your site will be live at `yourusername.github.io/coffee-side-hustle`
 
-**Option B: Netlify (Drag & Drop)**
-1. Go to [netlify.com](https://netlify.com)
-2. Drag this entire folder to deploy
-3. Get a free subdomain instantly
 
 ### Step 3: Drive Traffic (Free Methods)
 - Share on Reddit: r/coffee, r/CoffeeGear, r/BuyItForLife
