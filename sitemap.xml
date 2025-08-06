@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://bestlistbay.com/</loc>
+        <lastmod>2025-01-06</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://bestlistbay.com/images/black-rifle.jpg</image:loc>
+            <image:caption>Black Rifle Coffee - Premium Coffee Beans</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bestlistbay.com/images/bayka-french-press-coffee.jpg</image:loc>
+            <image:caption>Bayka French Press Coffee Maker</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bestlistbay.com/images/chemex-pour-over.jpg</image:loc>
+            <image:caption>Chemex Classic Pour-Over Coffee Maker</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bestlistbay.com/images/bodum-chambord-french-press.jpg</image:loc>
+            <image:caption>Bodum Chambord French Press</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bestlistbay.com/images/takeya-cold-brew.jpg</image:loc>
+            <image:caption>Takeya Cold Brew Coffee Maker</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bestlistbay.com/images/bialetti-moka-express.jpg</image:loc>
+            <image:caption>Bialetti Moka Express Stovetop Espresso Maker</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bestlistbay.com/images/Philips 3200 Series.jpg</image:loc>
+            <image:caption>Philips 3200 Series Automatic Espresso Machine</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bestlistbay.com/images/Nespresso Vertuo Plus Deluxe Coffee.jpg</image:loc>
+            <image:caption>Nespresso VertuoPlus Deluxe Coffee Machine</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bestlistbay.com/images/Amazon Basics Electric Coffee Grinder.jpg</image:loc>
+            <image:caption>Amazon Basics Electric Coffee Grinder</image:caption>
+        </image:image>
+    </url>
+</urlset>
