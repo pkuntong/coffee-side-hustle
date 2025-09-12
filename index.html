@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Coffee Gear 2025 - Honest Reviews & Deals</title>
-    <meta name="description" content="Find the best coffee makers, grinders, and accessories. Honest reviews and latest deals to help you brew better coffee at home.">
-    <meta name="keywords" content="best coffee maker, coffee grinder, espresso machine, french press, pour over coffee, cold brew, coffee equipment reviews, coffee gear 2025">
-    <meta name="author" content="Coffee Gear Hub">
+    <title>Best List Bay - Top Rated Products & Audiobooks 2025</title>
+    <meta name="description" content="Discover the best products, books, and gear worth your money. From coffee equipment to trending audiobooks - honest reviews and great deals.">
+    <meta name="keywords" content="best products 2025, top rated coffee gear, trending audiobooks, honest reviews, product recommendations, coffee equipment, audible books">
+    <meta name="author" content="Best List Bay">
     <link rel="canonical" href="https://bestlistbay.com/">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bestlistbay.com/">
-    <meta property="og:title" content="Best Coffee Gear 2025 - Honest Reviews & Deals">
-    <meta property="og:description" content="Discover the best coffee makers, grinders, and accessories that coffee enthusiasts actually recommend. No fluff, just honest reviews and the best deals.">
+    <meta property="og:title" content="Best List Bay - Top Rated Products & Audiobooks 2025">
+    <meta property="og:description" content="Discover the best products, books, and gear worth your money. From coffee equipment to trending audiobooks - honest reviews and great deals.">
     <meta property="og:image" content="https://bestlistbay.com/images/coffee-gear-og-image.jpg">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://bestlistbay.com/">
-    <meta property="twitter:title" content="Best Coffee Gear 2025 - Honest Reviews & Deals">
-    <meta property="twitter:description" content="Discover the best coffee makers, grinders, and accessories that coffee enthusiasts actually recommend.">
+    <meta property="twitter:title" content="Best List Bay - Top Rated Products & Audiobooks 2025">
+    <meta property="twitter:description" content="Discover the best products, books, and gear worth your money. Honest reviews and great deals.">
     <meta property="twitter:image" content="https://bestlistbay.com/images/coffee-gear-og-image.jpg">
     <style>
         * {
@@ -207,6 +207,52 @@
             color: #856404;
         }
         
+        /* Tab Styles */
+        .tab-navigation {
+            display: flex;
+            margin: 2rem 0 0 0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .tab-button {
+            flex: 1;
+            padding: 1.2rem 2rem;
+            border: none;
+            background: #f8f9fa;
+            color: #666;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-bottom: 4px solid transparent;
+        }
+        
+        .tab-button:hover {
+            background: #e9ecef;
+            color: #333;
+        }
+        
+        .tab-button.active {
+            background: white;
+            color: #8B4513;
+            border-bottom: 4px solid #FF6B35;
+        }
+        
+        .tab-content-area {
+            display: none;
+            margin-top: 0;
+            padding: 2rem;
+            background: white;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .tab-content-area.active {
+            display: block !important;
+        }
+
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2rem;
@@ -215,28 +261,41 @@
             .products-grid {
                 grid-template-columns: 1fr;
             }
+            
+            .tab-button {
+                padding: 1rem 1rem;
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>☕ Coffee Gear Hub</h1>
-            <p>Your trusted source for honest coffee equipment reviews</p>
+            <h1>🏆 Best List Bay</h1>
+            <p>Discover the best products, books, and gear worth your money</p>
         </div>
     </header>
 
     <main class="container">
         <div class="hero">
-            <h1>Best Coffee Equipment 2025: Expert Reviews & Deals</h1>
-            <p>Discover the top-rated coffee makers, grinders, and accessories that coffee enthusiasts actually recommend. From budget-friendly options to premium gear - find your perfect brew setup with honest reviews and exclusive deals.</p>
+            <h1>Best Products 2025: Expert Reviews & Smart Deals</h1>
+            <p>Discover top-rated coffee equipment and trending audiobooks that people actually recommend. From budget-friendly finds to premium picks - we curate the best products worth your money with honest reviews and exclusive deals.</p>
         </div>
 
         <div class="disclaimer">
             <strong>Affiliate Disclosure:</strong> We may earn a commission if you purchase through our links, at no extra cost to you. This helps support our independent reviews.
         </div>
 
-        <div class="products-grid">
+        <!-- Tab Navigation -->
+        <div class="tab-navigation">
+            <button class="tab-button" onclick="switchTab('coffee')">☕ Coffee Gear</button>
+            <button class="tab-button active" onclick="switchTab('audiobooks')">🎧 Audiobooks</button>
+        </div>
+
+        <!-- Coffee Tab Content -->
+        <div id="coffee-content" class="tab-content-area">
+            <div class="products-grid">
             <!-- Product 1 -->
             <div class="product-card">
                 <div class="product-image">
@@ -450,39 +509,223 @@
                 </div>
             </div>
         </div>
+        </div>
+
+        <!-- Audiobooks Tab Content -->
+        <div id="audiobooks-content" class="tab-content-area active">
+            <div style="background: linear-gradient(135deg, #8B4513, #A0522D); color: white; padding: 2rem; margin-bottom: 2rem; border-radius: 10px; text-align: center;">
+                <h2 style="margin-bottom: 1rem; font-size: 2.2rem;">🎧 Coffee Culture & Learning</h2>
+                <p style="font-size: 1.1rem; opacity: 0.9;">Enhance your coffee journey with audiobooks on entrepreneurship, food culture, and business - perfect for your morning brew routine</p>
+            </div>
+            
+            <div class="products-grid">
+                    <!-- Audiobook 1 -->
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, #FF6B35, #F7931E); color: white; font-size: 1.2rem; font-weight: bold; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">📚</div>
+                            <div style="text-align: center; line-height: 1.2;">ATOMIC<br>HABITS</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Atomic Habits by James Clear</h3>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="review-count">(4.8/5 from 125,000+ reviews)</span>
+                            </div>
+                            <p class="product-description">#1 New York Times bestseller! Perfect for your morning coffee routine. Learn how tiny changes lead to remarkable results. Build better habits while enjoying your daily brew.</p>
+                            <ul class="features">
+                                <li>Narrated by James Clear himself</li>
+                                <li>Over 1 million copies sold</li>
+                                <li>Perfect for morning routines</li>
+                                <li>Proven framework for improvement</li>
+                            </ul>
+                            <p class="product-price">1 Audible Credit</p>
+                            <a href="https://amzn.to/46BhVpe" class="btn-primary audible-link" target="_blank" rel="nofollow">Get with Audible Credit → <span style="font-size: 0.8rem; opacity: 0.8;">Earn $1 bounty</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Audiobook 2 -->
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, #2E8B57, #32CD32); color: white; font-size: 1.2rem; font-weight: bold; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">💰</div>
+                            <div style="text-align: center; line-height: 1.2;">RICH DAD<br>POOR DAD</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Rich Dad Poor Dad by Robert Kiyosaki</h3>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="review-count">(4.6/5 from 89,500+ reviews)</span>
+                            </div>
+                            <p class="product-description">#1 Personal Finance Book of All Time! Change your mindset about money while enjoying your morning coffee. Learn what the rich teach their kids about money.</p>
+                            <ul class="features">
+                                <li>Translated into dozens of languages</li>
+                                <li>Sold around the world</li>
+                                <li>Essential financial education</li>
+                                <li>Perfect for entrepreneurs</li>
+                            </ul>
+                            <p class="product-price">1 Audible Credit</p>
+                            <a href="https://amzn.to/3JTmrGX" class="btn-primary audible-link" target="_blank" rel="nofollow">Get with Audible Credit → <span style="font-size: 0.8rem; opacity: 0.8;">Earn $1 bounty</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Audiobook 3 -->
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, #4169E1, #6495ED); color: white; font-size: 1.2rem; font-weight: bold; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">⭐</div>
+                            <div style="text-align: center; line-height: 1.2;">7 HABITS<br>EFFECTIVE</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">The 7 Habits of Highly Effective People by Stephen Covey</h3>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="review-count">(4.7/5 from 45,800+ reviews)</span>
+                            </div>
+                            <p class="product-description">Transform your life one habit at a time! Perfect listening for your coffee break. This timeless classic has helped millions develop the habits of successful people.</p>
+                            <ul class="features">
+                                <li>Narrated by Stephen Covey himself</li>
+                                <li>Nearly 3 decades of proven results</li>
+                                <li>Transformed millions of lives</li>
+                                <li>Perfect for personal development</li>
+                            </ul>
+                            <p class="product-price">1 Audible Credit</p>
+                            <a href="https://amzn.to/47GqZdy" class="btn-primary audible-link" target="_blank" rel="nofollow">Get with Audible Credit → <span style="font-size: 0.8rem; opacity: 0.8;">Earn $1 bounty</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Audiobook 4 -->
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, #8B008B, #DA70D6); color: white; font-size: 1.2rem; font-weight: bold; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">💎</div>
+                            <div style="text-align: center; line-height: 1.2;">THINK &<br>GROW RICH</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Think and Grow Rich by Napoleon Hill</h3>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="review-count">(4.5/5 from 67,200+ reviews)</span>
+                            </div>
+                            <p class="product-description">The original 1937 success classic! Inspired by Andrew Carnegie, this timeless book reveals the secrets of wealth building. Perfect motivation for your morning coffee ritual.</p>
+                            <ul class="features">
+                                <li>The original 1937 edition</li>
+                                <li>Inspired by Andrew Carnegie</li>
+                                <li>Timeless wealth-building principles</li>
+                                <li>Perfect entrepreneurial inspiration</li>
+                            </ul>
+                            <p class="product-price">1 Audible Credit</p>
+                            <a href="https://amzn.to/4pllYxb" class="btn-primary audible-link" target="_blank" rel="nofollow">Get with Audible Credit → <span style="font-size: 0.8rem; opacity: 0.8;">Earn $1 bounty</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: rgba(0,0,0,0.1); padding: 1.5rem; margin-top: 2rem; border-radius: 8px; text-align: center;">
+                    <h4 style="margin-bottom: 0.5rem;">How This Works:</h4>
+                    <p style="font-size: 0.9rem; opacity: 0.8; line-height: 1.4;">
+                        <strong>1.</strong> Click any audiobook above → <strong>2.</strong> Use your Audible member credit → <strong>3.</strong> Start listening to great content!
+                        <br><em>Each credit redemption helps support our coffee gear reviews.</em>
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Coffee Gear Hub. Built with ❤️ for coffee lovers.</p>
+            <p>&copy; 2025 Best List Bay. Built with ❤️ for smart shoppers.</p>
             <p>As an Amazon Associate, I earn from qualifying purchases.</p>
         </div>
     </footer>
 
     <script>
-        // Simple analytics tracking
+        // Enhanced analytics tracking for both physical products and Audible
         document.querySelectorAll('.btn-primary').forEach(button => {
             button.addEventListener('click', function() {
-                // Track clicks (you can replace with Google Analytics later)
-                console.log('Product clicked:', this.closest('.product-card').querySelector('.product-title').textContent);
+                const productTitle = this.closest('.product-card').querySelector('.product-title').textContent;
+                const isAudible = this.classList.contains('audible-link');
+                
+                if (isAudible) {
+                    // Track Audible bounty clicks separately
+                    console.log('Audible audiobook clicked:', productTitle);
+                    // Add your Audible conversion tracking code here
+                    // gtag('event', 'audible_click', { 'audiobook_name': productTitle });
+                } else {
+                    // Track regular product clicks
+                    console.log('Coffee product clicked:', productTitle);
+                    // gtag('event', 'product_click', { 'product_name': productTitle });
+                }
             });
+        });
+
+        // Clean tab switching functionality
+        function switchTab(tabName) {
+            console.log('Switching to tab:', tabName);
+            
+            // Hide all tab content areas
+            document.querySelectorAll('.tab-content-area').forEach(area => {
+                area.classList.remove('active');
+                console.log('Removed active from:', area.id);
+            });
+            
+            // Remove active class from all tab buttons
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.classList.remove('active');
+            });
+            
+            // Show selected tab content
+            const targetContent = document.getElementById(tabName + '-content');
+            if (targetContent) {
+                targetContent.classList.add('active');
+                console.log('Added active to:', targetContent.id);
+            } else {
+                console.error('Could not find content for tab:', tabName);
+            }
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+            
+            // Track tab switches
+            console.log('Tab switched to:', tabName);
+        }
+
+        // Initialize page - ensure audiobooks tab is visible by default
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Page loaded, initializing tabs...');
+            
+            // Debug: Check all tab content areas
+            const allTabAreas = document.querySelectorAll('.tab-content-area');
+            console.log('Found tab areas:', allTabAreas.length);
+            allTabAreas.forEach(area => {
+                console.log('Tab area:', area.id, 'has active class:', area.classList.contains('active'));
+            });
+            
+            // Ensure audiobooks tab is active by default
+            const audiobooksContent = document.getElementById('audiobooks-content');
+            const audiobooksButton = document.querySelector('button[onclick="switchTab(\'audiobooks\')"]');
+            
+            console.log('Audiobooks content found:', !!audiobooksContent);
+            console.log('Audiobooks button found:', !!audiobooksButton);
+            
+            if (audiobooksContent && audiobooksButton) {
+                audiobooksContent.classList.add('active');
+                audiobooksButton.classList.add('active');
+                console.log('Audiobooks tab initialized as active');
+                console.log('Audiobooks content display style:', window.getComputedStyle(audiobooksContent).display);
+            }
         });
 
         // Add some basic SEO optimization
         const metaKeywords = document.createElement('meta');
         metaKeywords.name = 'keywords';
-        metaKeywords.content = 'best coffee maker, coffee grinder, pour over coffee, french press, cold brew, coffee equipment reviews, coffee gear';
+        metaKeywords.content = 'best products 2025, top rated gear, trending audiobooks, honest reviews, coffee equipment, product recommendations';
         document.head.appendChild(metaKeywords);
 
         // Add Open Graph tags for social media
         const ogTitle = document.createElement('meta');
         ogTitle.property = 'og:title';
-        ogTitle.content = 'Best Coffee Gear 2024 - Honest Reviews & Deals';
+        ogTitle.content = 'Best List Bay - Top Rated Products & Audiobooks 2025';
         document.head.appendChild(ogTitle);
 
         const ogDescription = document.createElement('meta');
         ogDescription.property = 'og:description';
-        ogDescription.content = 'Discover the best coffee makers, grinders, and accessories that coffee enthusiasts actually recommend.';
+        ogDescription.content = 'Discover the best products, books, and gear worth your money. Honest reviews and great deals.';
         document.head.appendChild(ogDescription);
     </script>
 
@@ -491,12 +734,12 @@
     {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "Coffee Gear Hub",
+        "name": "Best List Bay",
         "url": "https://bestlistbay.com/",
-        "description": "Your trusted source for honest coffee equipment reviews and deals",
+        "description": "Discover the best products, books, and gear worth your money",
         "publisher": {
             "@type": "Organization",
-            "name": "Coffee Gear Hub"
+            "name": "Best List Bay"
         }
     }
     </script>
@@ -506,8 +749,8 @@
     {
         "@context": "https://schema.org",
         "@type": "ItemList",
-        "name": "Best Coffee Equipment 2025",
-        "description": "Top-rated coffee makers, grinders, and accessories",
+        "name": "Best Products & Audiobooks 2025",
+        "description": "Top-rated coffee equipment, trending audiobooks, and curated gear",
         "itemListElement": [
             {
                 "@type": "Product",
