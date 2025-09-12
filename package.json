@@ -1,16 +1,16 @@
 {
-  "name": "coffee-side-hustle",
+  "name": "best-list-bay",
   "version": "1.0.0",
-  "description": "Coffee gear review website",
+  "description": "Discover the best products, books, and gear worth your money",
   "main": "index.html",
   "scripts": {
     "dev": "live-server --port=3000 --open=/",
     "start": "live-server --port=3000 --open=/",
-    "build": "echo 'Static site - no build needed'",
+    "build": "mkdir -p public && cp -r index.html images robots.txt sitemap.xml public/",
     "serve": "live-server --port=8080"
   },
-  "keywords": ["coffee", "reviews", "equipment", "static-site"],
-  "author": "Coffee Gear Hub",
+  "keywords": ["best-products", "reviews", "coffee", "audiobooks", "static-site"],
+  "author": "Best List Bay",
   "license": "MIT",
   "devDependencies": {
     "live-server": "^1.2.2"
