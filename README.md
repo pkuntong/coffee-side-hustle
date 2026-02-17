@@ -1,64 +1,60 @@
-# Coffee Gear Hub - Zero-Cost Side Hustle
+# Best List Bay
 
-A simple, effective affiliate marketing website focused on coffee equipment. Built with pure HTML/CSS/JS - no frameworks, no hosting costs, no upfront investment.
+Static affiliate website featuring curated coffee gear and audiobook recommendations.
 
-## 🚀 How to Start Earning Money
+## Stack
 
-### Step 1: Get Your Amazon Affiliate Links (Free)
-1. Go to [Amazon Associates](https://affiliate-program.amazon.com/)
-2. Sign up for a free account
-3. Search for each product mentioned in the site
-4. Generate your unique affiliate links
-5. Replace the placeholder links in `index.html` with your real links
+- HTML, CSS, vanilla JavaScript
+- Static assets in `/images`
+- `live-server` for local development
 
-### Step 2: Free Hosting Options
-**Option A: GitHub Pages (Recommended)**
-1. Create a free GitHub account
-2. Upload this folder as a new repository
-3. Enable GitHub Pages in repository settings
-4. Your site will be live at `yourusername.github.io/coffee-side-hustle`
+## Local Development
 
+```bash
+npm install
+npm run dev
+```
 
-### Step 3: Drive Traffic (Free Methods)
-- Share on Reddit: r/coffee, r/CoffeeGear, r/BuyItForLife
-- Post in coffee Facebook groups
-- Answer coffee questions on Quora with your site link
-- Create Pinterest pins for each product
-- Share in coffee Discord servers
+The site starts on `http://localhost:3000`.
 
-### Step 4: Scale Up
-- Add more products (espresso machines, kettles, scales)
-- Create comparison tables
-- Add "Best Budget" and "Best Premium" categories
-- Write detailed reviews for each product
+## Build
 
-## 💰 Earning Potential
-- **Conservative estimate**: $50-200/month with steady traffic
-- **Coffee gear commissions**: 3-8% on Amazon
-- **Average order value**: $50-200
-- **Example**: 100 visitors/day → 5 sales/week → $100-400/month
+```bash
+npm run build
+```
 
-## 🔧 Quick Customization
-1. **Update links**: Replace `https://amzn.to/3XXXXX#` with your real affiliate links
-2. **Add products**: Copy/paste product cards and modify details
-3. **Change niche**: Replace coffee with any other profitable niche (tech, fitness, etc.)
+Build output is written to `/public`:
 
-## 📊 Track Your Success
-- Amazon Associates dashboard shows clicks and earnings
-- Add Google Analytics (free) for detailed traffic stats
-- Monitor which products convert best
+- `index.html`
+- `images/`
+- `robots.txt`
+- `sitemap.xml`
 
-## 🎯 Pro Tips
-- Focus on products with 4+ star ratings and 1000+ reviews
-- Update prices monthly (Amazon API can automate this)
-- Create seasonal content ("Best Gifts for Coffee Lovers")
-- Build an email list with a free Mailchimp account
+## Project Structure
 
-## Zero Cost Checklist
-- ✅ No paid hosting required
-- ✅ No domain purchase needed
-- ✅ No premium tools required
-- ✅ No inventory to manage
-- ✅ No customer service needed
+- `/index.html`: Entire site UI, styles, behavior, and structured data
+- `/images`: Product imagery
+- `/robots.txt`: Crawler directives
+- `/sitemap.xml`: Search engine sitemap
+- `/vercel.json`: Vercel static hosting config
 
-Start today and you could have your first affiliate commission within a week!
+## Content Updates
+
+1. Update product copy, pricing, and links in `/index.html`.
+2. Keep affiliate disclosures visible and accurate.
+3. When updating image filenames with spaces, URL-encode them in `/sitemap.xml` and structured data.
+4. Update `lastmod` in `/sitemap.xml` when major content changes are published.
+
+## Deployment
+
+This repository is ready for static hosting (Vercel, GitHub Pages, Netlify, or similar).
+
+For Vercel:
+
+1. Import the repo.
+2. Deploy as a static project.
+3. Configure your domain (for example, `bestlistbay.com`).
+
+## Compliance Note
+
+The site contains affiliate links. Keep FTC-compliant disclosure language and Amazon Associates language current for your region and program terms.

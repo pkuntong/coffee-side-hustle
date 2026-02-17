@@ -18,4 +18,11 @@ Thumbs.db
 
 # Temporary files
 *.tmp
-*.temp 
+*.temp
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Build output
+public/

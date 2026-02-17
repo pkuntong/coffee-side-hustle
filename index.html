@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best List Bay - Top Rated Products & Audiobooks 2025</title>
+    <title>Best List Bay | Top Rated Products, Coffee Gear, and Audiobooks</title>
     <meta name="description" content="Discover the best products, books, and gear worth your money. From coffee equipment to trending audiobooks - honest reviews and great deals.">
-    <meta name="keywords" content="best products 2025, top rated coffee gear, trending audiobooks, honest reviews, product recommendations, coffee equipment, audible books">
+    <meta name="keywords" content="best products, top rated coffee gear, trending audiobooks, honest reviews, product recommendations, coffee equipment, audible books">
     <meta name="author" content="Best List Bay">
     <link rel="canonical" href="https://bestlistbay.com/">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bestlistbay.com/">
-    <meta property="og:title" content="Best List Bay - Top Rated Products & Audiobooks 2025">
+    <meta property="og:title" content="Best List Bay | Top Rated Products, Coffee Gear, and Audiobooks">
     <meta property="og:description" content="Discover the best products, books, and gear worth your money. From coffee equipment to trending audiobooks - honest reviews and great deals.">
-    <meta property="og:image" content="https://bestlistbay.com/images/coffee-gear-og-image.jpg">
+    <meta property="og:image" content="https://bestlistbay.com/images/black-rifle.jpg">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://bestlistbay.com/">
-    <meta property="twitter:title" content="Best List Bay - Top Rated Products & Audiobooks 2025">
+    <meta property="twitter:title" content="Best List Bay | Top Rated Products, Coffee Gear, and Audiobooks">
     <meta property="twitter:description" content="Discover the best products, books, and gear worth your money. Honest reviews and great deals.">
-    <meta property="twitter:image" content="https://bestlistbay.com/images/coffee-gear-og-image.jpg">
+    <meta property="twitter:image" content="https://bestlistbay.com/images/black-rifle.jpg">
     <style>
         * {
             margin: 0;
@@ -279,7 +279,7 @@
 
     <main class="container">
         <div class="hero">
-            <h1>Best Products 2025: Expert Reviews & Smart Deals</h1>
+            <h1>Best Products: Expert Reviews and Smart Deals</h1>
             <p>Discover top-rated coffee equipment and trending audiobooks that people actually recommend. From budget-friendly finds to premium picks - we curate the best products worth your money with honest reviews and exclusive deals.</p>
         </div>
 
@@ -288,18 +288,18 @@
         </div>
 
         <!-- Tab Navigation -->
-        <div class="tab-navigation">
-            <button class="tab-button" onclick="switchTab('coffee')">☕ Coffee Gear</button>
-            <button class="tab-button active" onclick="switchTab('audiobooks')">🎧 Audiobooks</button>
+        <div class="tab-navigation" role="tablist" aria-label="Browse product categories">
+            <button id="coffee-tab" type="button" class="tab-button" role="tab" aria-controls="coffee-content" aria-selected="false" tabindex="-1" onclick="switchTab('coffee', this)">☕ Coffee Gear</button>
+            <button id="audiobooks-tab" type="button" class="tab-button active" role="tab" aria-controls="audiobooks-content" aria-selected="true" tabindex="0" onclick="switchTab('audiobooks', this)">🎧 Audiobooks</button>
         </div>
 
         <!-- Coffee Tab Content -->
-        <div id="coffee-content" class="tab-content-area">
+        <div id="coffee-content" class="tab-content-area" role="tabpanel" aria-labelledby="coffee-tab" hidden>
             <div class="products-grid">
             <!-- Product 1 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="images/black-rifle.jpg" alt="Black Rifle Coffee CAF - Premium Coffee Beans with Tactical Design" onerror="this.style.background='#2c1810'; this.style.display='flex'; this.style.alignItems='center'; this.style.justifyContent='center'; this.style.color='white'; this.style.fontSize='1.2rem'; this.innerHTML='BLACK RIFLE COFFEE'; this.style.fontWeight='bold';">
+                    <img loading="lazy" decoding="async" src="images/black-rifle.jpg" alt="Black Rifle Coffee CAF - Premium Coffee Beans with Tactical Design" onerror="handleImageError(this, 'Black Rifle Coffee');">
                 </div>
                 <div class="product-content">
                     <h3 class="product-title">Black Rifle Coffee</h3>
@@ -315,14 +315,14 @@
                         <li>Ground, CAF, Medium Roast</li>
                     </ul>
                     <p class="product-price">$69.95</p>
-                    <a href="https://amzn.to/4nYiL6g" class="btn-primary" target="_blank" rel="nofollow">Check Latest Price →</a>
+                    <a href="https://amzn.to/4nYiL6g" class="btn-primary" target="_blank" rel="nofollow sponsored noopener noreferrer">Check Latest Price →</a>
                 </div>
             </div>
 
             <!-- Product 2 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="images/bayka-french-press-coffee.jpg" alt="Bayka French Press - Coffee Maker 34 Ounce 1 Liter, Borosilicate Glass Stainless Steel Brewer, Large Portable Cold Brew Cafetera Teapot for Kitchen Travel Camping Coffee Bar Accessories, Dark Pewter" onerror="this.style.background='#2c1810'; this.style.display='flex'; this.style.alignItems='center'; this.style.justifyContent='center'; this.style.color='white'; this.style.fontSize='1.2rem'; this.innerHTML='BAYKA FRENCH PRESS'; this.style.fontWeight='bold';">
+                    <img loading="lazy" decoding="async" src="images/bayka-french-press-coffee.jpg" alt="Bayka French Press - Coffee Maker 34 Ounce 1 Liter, Borosilicate Glass Stainless Steel Brewer, Large Portable Cold Brew Cafetera Teapot for Kitchen Travel Camping Coffee Bar Accessories, Dark Pewter" onerror="handleImageError(this, 'Bayka French Press');">
                 </div>
                 <div class="product-content">
                     <h3 class="product-title">Bayka French Press Coffee Maker</h3>
@@ -334,18 +334,18 @@
                     <ul class="features">
                         <li>Capacity: 2.1 Pounds, 1.3 Pounds weight</li>
                         <li>Stainless Steel</li>
-                        <li>Easy to use & clean</li>
+                        <li>Easy to use &amp; clean</li>
                         <li>Home use, office use, outdoor gatherings, camping, etc.</li>
                     </ul>
                     <p class="product-price">$19.99</p>
-                    <a href="https://amzn.to/3TGpdAX" class="btn-primary" target="_blank" rel="nofollow">Check Latest Price →</a>
+                    <a href="https://amzn.to/3TGpdAX" class="btn-primary" target="_blank" rel="nofollow sponsored noopener noreferrer">Check Latest Price →</a>
                 </div>
             </div>
 
             <!-- Product 3 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="images/chemex-pour-over.jpg" alt="Chemex Classic Pour-Over Coffee Maker - Iconic Glass Coffee Brewer" onerror="this.style.background='#2c1810'; this.style.display='flex'; this.style.alignItems='center'; this.style.justifyContent='center'; this.style.color='white'; this.style.fontSize='1.2rem'; this.innerHTML='CHEMEX POUR-OVER'; this.style.fontWeight='bold';">
+                    <img loading="lazy" decoding="async" src="images/chemex-pour-over.jpg" alt="Chemex Classic Pour-Over Coffee Maker - Iconic Glass Coffee Brewer" onerror="handleImageError(this, 'Chemex Pour-Over');">
                 </div>
                 <div class="product-content">
                     <h3 class="product-title">Chemex Classic Pour-Over Coffee Maker</h3>
@@ -361,14 +361,14 @@
                         <li>Timeless design</li>
                     </ul>
                     <p class="product-price">$48.93</p>
-                    <a href="https://amzn.to/4nSwLOR" class="btn-primary" target="_blank" rel="nofollow">Check Latest Price →</a>
+                    <a href="https://amzn.to/4nSwLOR" class="btn-primary" target="_blank" rel="nofollow sponsored noopener noreferrer">Check Latest Price →</a>
                 </div>
             </div>
 
             <!-- Product 4 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="images/bodum-chambord-french-press.jpg" alt="Bodum Chambord French Press - Classic Coffee Maker with Stainless Steel Filter" onerror="this.style.background='#2c1810'; this.style.display='flex'; this.style.alignItems='center'; this.style.justifyContent='center'; this.style.color='white'; this.style.fontSize='1.2rem'; this.innerHTML='BODUM CHAMBORD'; this.style.fontWeight='bold';">
+                    <img loading="lazy" decoding="async" src="images/bodum-chambord-french-press.jpg" alt="Bodum Chambord French Press - Classic Coffee Maker with Stainless Steel Filter" onerror="handleImageError(this, 'Bodum Chambord');">
                 </div>
                 <div class="product-content">
                     <h3 class="product-title">Bodum Chambord French Press</h3>
@@ -384,14 +384,14 @@
                         <li>Dishwasher safe</li>
                     </ul>
                     <p class="product-price">$39.95</p>
-                    <a href="https://amzn.to/4nXCh2Q" class="btn-primary" target="_blank" rel="nofollow">Check Latest Price →</a>
+                    <a href="https://amzn.to/4nXCh2Q" class="btn-primary" target="_blank" rel="nofollow sponsored noopener noreferrer">Check Latest Price →</a>
                 </div>
             </div>
 
             <!-- Product 5 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="images/takeya-cold-brew.jpg" alt="Takeya Cold Brew Coffee Maker - BPA Free Cold Brew System" onerror="this.style.background='#2c1810'; this.style.display='flex'; this.style.alignItems='center'; this.style.justifyContent='center'; this.style.color='white'; this.style.fontSize='1.2rem'; this.innerHTML='TAKEYA COLD BREW'; this.style.fontWeight='bold';">
+                    <img loading="lazy" decoding="async" src="images/takeya-cold-brew.jpg" alt="Takeya Cold Brew Coffee Maker - BPA Free Cold Brew System" onerror="handleImageError(this, 'Takeya Cold Brew');">
                 </div>
                 <div class="product-content">
                     <h3 class="product-title">Takeya Cold Brew Coffee Maker</h3>
@@ -407,14 +407,14 @@
                         <li>Dishwasher safe</li>
                     </ul>
                     <p class="product-price">$27.99</p>
-                    <a href="https://amzn.to/44HOxLK" class="btn-primary" target="_blank" rel="nofollow">Check Latest Price →</a>
+                    <a href="https://amzn.to/44HOxLK" class="btn-primary" target="_blank" rel="nofollow sponsored noopener noreferrer">Check Latest Price →</a>
                 </div>
             </div>
 
             <!-- Product 6 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="images/bialetti-moka-express.jpg" alt="Bialetti Moka Express - Original Italian Stovetop Espresso Maker" onerror="this.style.background='#2c1810'; this.style.display='flex'; this.style.alignItems='center'; this.style.justifyContent='center'; this.style.color='white'; this.style.fontSize='1.2rem'; this.innerHTML='BIALETTI MOKA'; this.style.fontWeight='bold';">
+                    <img loading="lazy" decoding="async" src="images/bialetti-moka-express.jpg" alt="Bialetti Moka Express - Original Italian Stovetop Espresso Maker" onerror="handleImageError(this, 'Bialetti Moka Express');">
                 </div>
                 <div class="product-content">
                     <h3 class="product-title">Bialetti Moka Express</h3>
@@ -430,14 +430,14 @@
                         <li>Made in Italy</li>
                     </ul>
                     <p class="product-price">$49.99</p>
-                    <a href="https://amzn.to/3Uhol5W" class="btn-primary" target="_blank" rel="nofollow">Check Latest Price →</a>
+                    <a href="https://amzn.to/3Uhol5W" class="btn-primary" target="_blank" rel="nofollow sponsored noopener noreferrer">Check Latest Price →</a>
                 </div>
             </div>
 
             <!-- Product 7 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="images/Philips 3200 Series.jpg" alt="Philips 3200 Series Fully Automatic Espresso Machine - LatteGo Milk Frother" onerror="this.style.background='#2c1810'; this.style.display='flex'; this.style.alignItems='center'; this.style.justifyContent='center'; this.style.color='white'; this.style.fontSize='1.2rem'; this.innerHTML='PHILIPS 3200 SERIES'; this.style.fontWeight='bold';">
+                    <img loading="lazy" decoding="async" src="images/Philips 3200 Series.jpg" alt="Philips 3200 Series Fully Automatic Espresso Machine - LatteGo Milk Frother" onerror="handleImageError(this, 'Philips 3200 Series');">
                 </div>
                 <div class="product-content">
                     <h3 class="product-title">Philips 3200 Series Fully Automatic Espresso Machine</h3>
@@ -455,17 +455,17 @@
                         <li>My Coffee Choice</li>
                     </ul>
                     <p class="product-price">$499.99</p>
-                    <a href="https://amzn.to/4m6R0qO" class="btn-primary" target="_blank" rel="nofollow">Check Latest Price →</a>
+                    <a href="https://amzn.to/4m6R0qO" class="btn-primary" target="_blank" rel="nofollow sponsored noopener noreferrer">Check Latest Price →</a>
                 </div>
             </div>
 
             <!-- Product 8 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="images/Nespresso Vertuo Plus Deluxe Coffee.jpg" alt="Nespresso VertuoPlus Deluxe Coffee and Espresso Maker with Aeroccino Milk Frother" onerror="this.style.background='#2c1810'; this.style.display='flex'; this.style.alignItems='center'; this.style.justifyContent='center'; this.style.color='white'; this.style.fontSize='1.2rem'; this.innerHTML='NESPRESSO VERTUO'; this.style.fontWeight='bold';">
+                    <img loading="lazy" decoding="async" src="images/Nespresso Vertuo Plus Deluxe Coffee.jpg" alt="Nespresso VertuoPlus Deluxe Coffee and Espresso Maker with Aeroccino Milk Frother" onerror="handleImageError(this, 'Nespresso VertuoPlus Deluxe');">
                 </div>
                 <div class="product-content">
-                    <h3 class="product-title">Nespresso VertuoPlus Deluxe Coffee & Espresso Maker</h3>
+                    <h3 class="product-title">Nespresso VertuoPlus Deluxe Coffee &amp; Espresso Maker</h3>
                     <div class="rating">
                         <span class="stars">★★★★☆</span>
                         <span class="review-count">(4.4/5 from 15,420+ reviews)</span>
@@ -480,14 +480,14 @@
                         <li>40-second heat-up time</li>
                     </ul>
                     <p class="product-price">$174.30</p>
-                    <a href="https://amzn.to/4liDcZ9" class="btn-primary" target="_blank" rel="nofollow">Check Latest Price →</a>
+                    <a href="https://amzn.to/4liDcZ9" class="btn-primary" target="_blank" rel="nofollow sponsored noopener noreferrer">Check Latest Price →</a>
                 </div>
             </div>
 
             <!-- Product 9 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="images/Amazon Basics Electric Coffee Grinder.jpg" alt="Amazon Basics Electric Coffee Grinder - Stainless Steel Blade Coffee Bean Grinder" onerror="this.style.background='#2c1810'; this.style.display='flex'; this.style.alignItems='center'; this.style.justifyContent='center'; this.style.color='white'; this.style.fontSize='1.2rem'; this.innerHTML='AMAZON BASICS GRINDER'; this.style.fontWeight='bold';">
+                    <img loading="lazy" decoding="async" src="images/Amazon Basics Electric Coffee Grinder.jpg" alt="Amazon Basics Electric Coffee Grinder - Stainless Steel Blade Coffee Bean Grinder" onerror="handleImageError(this, 'Amazon Basics Grinder');">
                 </div>
                 <div class="product-content">
                     <h3 class="product-title">Amazon Basics Electric Coffee Grinder</h3>
@@ -505,16 +505,16 @@
                         <li>Affordable quality</li>
                     </ul>
                     <p class="product-price">$17.09</p>
-                    <a href="https://amzn.to/3Hlr4s7" class="btn-primary" target="_blank" rel="nofollow">Check Latest Price →</a>
+                    <a href="https://amzn.to/3Hlr4s7" class="btn-primary" target="_blank" rel="nofollow sponsored noopener noreferrer">Check Latest Price →</a>
                 </div>
             </div>
         </div>
         </div>
 
         <!-- Audiobooks Tab Content -->
-        <div id="audiobooks-content" class="tab-content-area active">
+        <div id="audiobooks-content" class="tab-content-area active" role="tabpanel" aria-labelledby="audiobooks-tab">
             <div style="background: linear-gradient(135deg, #8B4513, #A0522D); color: white; padding: 2rem; margin-bottom: 2rem; border-radius: 10px; text-align: center;">
-                <h2 style="margin-bottom: 1rem; font-size: 2.2rem;">🎧 Coffee Culture & Learning</h2>
+                <h2 style="margin-bottom: 1rem; font-size: 2.2rem;">🎧 Coffee Culture &amp; Learning</h2>
                 <p style="font-size: 1.1rem; opacity: 0.9;">Enhance your coffee journey with audiobooks on entrepreneurship, food culture, and business - perfect for your morning brew routine</p>
             </div>
             
@@ -539,7 +539,7 @@
                                 <li>Proven framework for improvement</li>
                             </ul>
                             <p class="product-price">1 Audible Credit</p>
-                            <a href="https://amzn.to/46BhVpe" class="btn-primary audible-link" target="_blank" rel="nofollow">Get with Audible Credit → <span style="font-size: 0.8rem; opacity: 0.8;">Earn $1 bounty</span></a>
+                            <a href="https://amzn.to/46BhVpe" class="btn-primary audible-link" target="_blank" rel="nofollow sponsored noopener noreferrer">Get with Audible Credit → <span style="font-size: 0.8rem; opacity: 0.8;">Earn $1 bounty</span></a>
                         </div>
                     </div>
 
@@ -563,7 +563,7 @@
                                 <li>Perfect for entrepreneurs</li>
                             </ul>
                             <p class="product-price">1 Audible Credit</p>
-                            <a href="https://amzn.to/3JTmrGX" class="btn-primary audible-link" target="_blank" rel="nofollow">Get with Audible Credit → <span style="font-size: 0.8rem; opacity: 0.8;">Earn $1 bounty</span></a>
+                            <a href="https://amzn.to/3JTmrGX" class="btn-primary audible-link" target="_blank" rel="nofollow sponsored noopener noreferrer">Get with Audible Credit → <span style="font-size: 0.8rem; opacity: 0.8;">Earn $1 bounty</span></a>
                         </div>
                     </div>
 
@@ -587,7 +587,7 @@
                                 <li>Perfect for personal development</li>
                             </ul>
                             <p class="product-price">1 Audible Credit</p>
-                            <a href="https://amzn.to/47GqZdy" class="btn-primary audible-link" target="_blank" rel="nofollow">Get with Audible Credit → <span style="font-size: 0.8rem; opacity: 0.8;">Earn $1 bounty</span></a>
+                            <a href="https://amzn.to/47GqZdy" class="btn-primary audible-link" target="_blank" rel="nofollow sponsored noopener noreferrer">Get with Audible Credit → <span style="font-size: 0.8rem; opacity: 0.8;">Earn $1 bounty</span></a>
                         </div>
                     </div>
 
@@ -595,7 +595,7 @@
                     <div class="product-card">
                         <div class="product-image" style="background: linear-gradient(135deg, #8B008B, #DA70D6); color: white; font-size: 1.2rem; font-weight: bold; display: flex; align-items: center; justify-content: center; flex-direction: column;">
                             <div style="font-size: 2rem; margin-bottom: 0.5rem;">💎</div>
-                            <div style="text-align: center; line-height: 1.2;">THINK &<br>GROW RICH</div>
+                            <div style="text-align: center; line-height: 1.2;">THINK &amp;<br>GROW RICH</div>
                         </div>
                         <div class="product-content">
                             <h3 class="product-title">Think and Grow Rich by Napoleon Hill</h3>
@@ -611,7 +611,7 @@
                                 <li>Perfect entrepreneurial inspiration</li>
                             </ul>
                             <p class="product-price">1 Audible Credit</p>
-                            <a href="https://amzn.to/4pllYxb" class="btn-primary audible-link" target="_blank" rel="nofollow">Get with Audible Credit → <span style="font-size: 0.8rem; opacity: 0.8;">Earn $1 bounty</span></a>
+                            <a href="https://amzn.to/4pllYxb" class="btn-primary audible-link" target="_blank" rel="nofollow sponsored noopener noreferrer">Get with Audible Credit → <span style="font-size: 0.8rem; opacity: 0.8;">Earn $1 bounty</span></a>
                         </div>
                     </div>
                 </div>
@@ -624,109 +624,89 @@
                     </p>
                 </div>
             </div>
-        </div>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Best List Bay. Built with ❤️ for smart shoppers.</p>
+            <p>&copy; <span id="current-year">2026</span> Best List Bay. Built for smart shoppers.</p>
             <p>As an Amazon Associate, I earn from qualifying purchases.</p>
         </div>
     </footer>
 
     <script>
-        // Enhanced analytics tracking for both physical products and Audible
-        document.querySelectorAll('.btn-primary').forEach(button => {
-            button.addEventListener('click', function() {
-                const productTitle = this.closest('.product-card').querySelector('.product-title').textContent;
-                const isAudible = this.classList.contains('audible-link');
-                
-                if (isAudible) {
-                    // Track Audible bounty clicks separately
-                    console.log('Audible audiobook clicked:', productTitle);
-                    // Add your Audible conversion tracking code here
-                    // gtag('event', 'audible_click', { 'audiobook_name': productTitle });
-                } else {
-                    // Track regular product clicks
-                    console.log('Coffee product clicked:', productTitle);
-                    // gtag('event', 'product_click', { 'product_name': productTitle });
-                }
-            });
-        });
-
-        // Clean tab switching functionality
-        function switchTab(tabName) {
-            console.log('Switching to tab:', tabName);
-            
-            // Hide all tab content areas
-            document.querySelectorAll('.tab-content-area').forEach(area => {
-                area.classList.remove('active');
-                console.log('Removed active from:', area.id);
-            });
-            
-            // Remove active class from all tab buttons
-            document.querySelectorAll('.tab-button').forEach(button => {
-                button.classList.remove('active');
-            });
-            
-            // Show selected tab content
-            const targetContent = document.getElementById(tabName + '-content');
-            if (targetContent) {
-                targetContent.classList.add('active');
-                console.log('Added active to:', targetContent.id);
-            } else {
-                console.error('Could not find content for tab:', tabName);
-            }
-            
-            // Add active class to clicked button
-            event.target.classList.add('active');
-            
-            // Track tab switches
-            console.log('Tab switched to:', tabName);
+        function handleImageError(imageElement, fallbackLabel) {
+            imageElement.onerror = null;
+            imageElement.src = 'images/black-rifle.jpg';
+            imageElement.alt = fallbackLabel + ' image unavailable';
         }
 
-        // Initialize page - ensure audiobooks tab is visible by default
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log('Page loaded, initializing tabs...');
-            
-            // Debug: Check all tab content areas
-            const allTabAreas = document.querySelectorAll('.tab-content-area');
-            console.log('Found tab areas:', allTabAreas.length);
-            allTabAreas.forEach(area => {
-                console.log('Tab area:', area.id, 'has active class:', area.classList.contains('active'));
+        function trackAffiliateClick(buttonElement) {
+            const productCard = buttonElement.closest('.product-card');
+            const productTitleElement = productCard ? productCard.querySelector('.product-title') : null;
+            const productTitle = productTitleElement ? productTitleElement.textContent.trim() : 'Unknown product';
+            const eventName = buttonElement.classList.contains('audible-link') ? 'audible_click' : 'product_click';
+
+            if (typeof window.gtag === 'function') {
+                window.gtag('event', eventName, { product_name: productTitle });
+            }
+        }
+
+        function switchTab(tabName, activeButton) {
+            document.querySelectorAll('.tab-content-area').forEach(panel => {
+                const isActive = panel.id === tabName + '-content';
+                panel.classList.toggle('active', isActive);
+                panel.hidden = !isActive;
             });
-            
-            // Ensure audiobooks tab is active by default
-            const audiobooksContent = document.getElementById('audiobooks-content');
-            const audiobooksButton = document.querySelector('button[onclick="switchTab(\'audiobooks\')"]');
-            
-            console.log('Audiobooks content found:', !!audiobooksContent);
-            console.log('Audiobooks button found:', !!audiobooksButton);
-            
-            if (audiobooksContent && audiobooksButton) {
-                audiobooksContent.classList.add('active');
-                audiobooksButton.classList.add('active');
-                console.log('Audiobooks tab initialized as active');
-                console.log('Audiobooks content display style:', window.getComputedStyle(audiobooksContent).display);
+
+            document.querySelectorAll('.tab-button').forEach(button => {
+                const isActive = button === activeButton;
+                button.classList.toggle('active', isActive);
+                button.setAttribute('aria-selected', String(isActive));
+                button.tabIndex = isActive ? 0 : -1;
+            });
+        }
+
+        function handleTabKeydown(event) {
+            if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') {
+                return;
+            }
+
+            const tabs = Array.from(document.querySelectorAll('.tab-button'));
+            const currentIndex = tabs.indexOf(event.currentTarget);
+            if (currentIndex === -1) {
+                return;
+            }
+
+            event.preventDefault();
+
+            const direction = event.key === 'ArrowRight' ? 1 : -1;
+            const nextIndex = (currentIndex + direction + tabs.length) % tabs.length;
+            const nextTab = tabs[nextIndex];
+            const nextTabName = nextTab.id === 'coffee-tab' ? 'coffee' : 'audiobooks';
+
+            nextTab.focus();
+            switchTab(nextTabName, nextTab);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.btn-primary').forEach(button => {
+                button.addEventListener('click', () => trackAffiliateClick(button));
+            });
+
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.addEventListener('keydown', handleTabKeydown);
+            });
+
+            const yearElement = document.getElementById('current-year');
+            if (yearElement) {
+                yearElement.textContent = String(new Date().getFullYear());
+            }
+
+            const defaultTab = document.getElementById('audiobooks-tab');
+            if (defaultTab) {
+                switchTab('audiobooks', defaultTab);
             }
         });
-
-        // Add some basic SEO optimization
-        const metaKeywords = document.createElement('meta');
-        metaKeywords.name = 'keywords';
-        metaKeywords.content = 'best products 2025, top rated gear, trending audiobooks, honest reviews, coffee equipment, product recommendations';
-        document.head.appendChild(metaKeywords);
-
-        // Add Open Graph tags for social media
-        const ogTitle = document.createElement('meta');
-        ogTitle.property = 'og:title';
-        ogTitle.content = 'Best List Bay - Top Rated Products & Audiobooks 2025';
-        document.head.appendChild(ogTitle);
-
-        const ogDescription = document.createElement('meta');
-        ogDescription.property = 'og:description';
-        ogDescription.content = 'Discover the best products, books, and gear worth your money. Honest reviews and great deals.';
-        document.head.appendChild(ogDescription);
     </script>
 
     <!-- Structured Data for Website -->
@@ -749,7 +729,7 @@
     {
         "@context": "https://schema.org",
         "@type": "ItemList",
-        "name": "Best Products & Audiobooks 2025",
+        "name": "Best Products and Audiobooks",
         "description": "Top-rated coffee equipment, trending audiobooks, and curated gear",
         "itemListElement": [
             {
@@ -871,7 +851,7 @@
                 "position": 7,
                 "name": "Philips 3200 Series Fully Automatic Espresso Machine",
                 "description": "Fully automatic espresso machine with LatteGo milk frother and ceramic grinder",
-                "image": "https://bestlistbay.com/images/Philips 3200 Series.jpg",
+                "image": "https://bestlistbay.com/images/Philips%203200%20Series.jpg",
                 "offers": {
                     "@type": "Offer",
                     "price": "499.99",
@@ -890,7 +870,7 @@
                 "position": 8,
                 "name": "Nespresso VertuoPlus Deluxe Coffee & Espresso Maker",
                 "description": "Premium Nespresso machine with Centrifusion technology and Aeroccino milk frother",
-                "image": "https://bestlistbay.com/images/Nespresso Vertuo Plus Deluxe Coffee.jpg",
+                "image": "https://bestlistbay.com/images/Nespresso%20Vertuo%20Plus%20Deluxe%20Coffee.jpg",
                 "offers": {
                     "@type": "Offer",
                     "price": "174.30",
@@ -909,7 +889,7 @@
                 "position": 9,
                 "name": "Amazon Basics Electric Coffee Grinder",
                 "description": "Compact electric coffee grinder with heavy-duty stainless steel blades",
-                "image": "https://bestlistbay.com/images/Amazon Basics Electric Coffee Grinder.jpg",
+                "image": "https://bestlistbay.com/images/Amazon%20Basics%20Electric%20Coffee%20Grinder.jpg",
                 "offers": {
                     "@type": "Offer",
                     "price": "17.09",
