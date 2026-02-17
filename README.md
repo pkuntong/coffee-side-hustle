@@ -59,6 +59,20 @@ Examples:
 
 If no `ab` query parameter is present, the page assigns a variant randomly and stores it in `localStorage` using key `best_list_bay_copy_variant`.
 
+## Public Repo Safety
+
+Before pushing to a public repository:
+
+1. Confirm no secret files are staged (`.env`, keys, certs). These are gitignored by default.
+2. Run a quick scan for common secret patterns.
+3. Verify only expected files are tracked with `git status`.
+
+Example scan:
+
+```bash
+grep -RInE "AKIA[0-9A-Z]{16}|sk_(live|test)_[0-9A-Za-z]{10,}|ghp_[0-9A-Za-z]{20,}|BEGIN [A-Z ]*PRIVATE KEY|api[_-]?key\\s*[:=]\\s*['\\\"][^'\\\"]+['\\\"]" .
+```
+
 ## Deployment
 
 This repository is ready for static hosting (Vercel, GitHub Pages, Netlify, or similar).

@@ -380,6 +380,84 @@
             color: #65584f;
         }
 
+        .audiobook-hero {
+            background: linear-gradient(135deg, #8B4513, #A0522D);
+            color: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .audiobook-hero h2 {
+            margin-bottom: 1rem;
+            font-size: 2.2rem;
+        }
+
+        .audiobook-hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .audiobook-cover {
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .audiobook-cover--orange {
+            background: linear-gradient(135deg, #FF6B35, #F7931E);
+        }
+
+        .audiobook-cover--green {
+            background: linear-gradient(135deg, #2E8B57, #32CD32);
+        }
+
+        .audiobook-cover--blue {
+            background: linear-gradient(135deg, #4169E1, #6495ED);
+        }
+
+        .audiobook-cover--purple {
+            background: linear-gradient(135deg, #8B008B, #DA70D6);
+        }
+
+        .audiobook-cover-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .audiobook-cover-title {
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        .audiobook-bounty {
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+
+        .audiobook-steps {
+            background: rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .audiobook-steps h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        .audiobook-steps p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            line-height: 1.4;
+        }
+
         @media (max-width: 768px) {
             .hero {
                 padding: 2.2rem 1.2rem;
@@ -448,7 +526,7 @@
         </section>
 
         <!-- Tab Navigation -->
-        <div id="category-tabs" class="tab-navigation" role="tablist" aria-label="Browse product categories">
+        <div class="tab-navigation" role="tablist" aria-label="Browse product categories">
             <button id="coffee-tab" type="button" class="tab-button active" role="tab" aria-controls="coffee-content" aria-selected="true" tabindex="0" onclick="switchTab('coffee', this)">☕ Coffee Gear</button>
             <button id="audiobooks-tab" type="button" class="tab-button" role="tab" aria-controls="audiobooks-content" aria-selected="false" tabindex="-1" onclick="switchTab('audiobooks', this)">🎧 Audiobooks</button>
         </div>
@@ -457,7 +535,7 @@
         <div id="coffee-content" class="tab-content-area active" role="tabpanel" aria-labelledby="coffee-tab">
             <div class="products-grid">
             <!-- Product 1 -->
-            <div class="product-card" id="coffee-top-pick">
+            <div class="product-card">
                 <span class="top-pick-badge">Top Pick</span>
                 <div class="product-image">
                     <img loading="lazy" decoding="async" src="images/black-rifle.jpg" alt="Black Rifle Coffee CAF - Premium Coffee Beans with Tactical Design" onerror="handleImageError(this, 'Black Rifle Coffee');">
@@ -680,18 +758,18 @@
 
         <!-- Audiobooks Tab Content -->
         <div id="audiobooks-content" class="tab-content-area" role="tabpanel" aria-labelledby="audiobooks-tab" hidden>
-            <div style="background: linear-gradient(135deg, #8B4513, #A0522D); color: white; padding: 2rem; margin-bottom: 2rem; border-radius: 10px; text-align: center;">
-                <h2 style="margin-bottom: 1rem; font-size: 2.2rem;">🎧 Coffee Culture &amp; Learning</h2>
-                <p style="font-size: 1.1rem; opacity: 0.9;">Enhance your coffee journey with audiobooks on entrepreneurship, food culture, and business - perfect for your morning brew routine</p>
+            <div class="audiobook-hero">
+                <h2>🎧 Coffee Culture &amp; Learning</h2>
+                <p>Enhance your coffee journey with audiobooks on entrepreneurship, food culture, and business - perfect for your morning brew routine</p>
             </div>
             
             <div class="products-grid">
                     <!-- Audiobook 1 -->
-                    <div class="product-card" id="audiobook-top-pick">
+                    <div class="product-card">
                         <span class="top-pick-badge">Top Pick</span>
-                        <div class="product-image" style="background: linear-gradient(135deg, #FF6B35, #F7931E); color: white; font-size: 1.2rem; font-weight: bold; display: flex; align-items: center; justify-content: center; flex-direction: column;">
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">📚</div>
-                            <div style="text-align: center; line-height: 1.2;">ATOMIC<br>HABITS</div>
+                        <div class="product-image audiobook-cover audiobook-cover--orange">
+                            <div class="audiobook-cover-icon">📚</div>
+                            <div class="audiobook-cover-title">ATOMIC<br>HABITS</div>
                         </div>
                         <div class="product-content">
                             <h3 class="product-title">Atomic Habits by James Clear</h3>
@@ -707,15 +785,15 @@
                                 <li>Proven framework for improvement</li>
                             </ul>
                             <p class="product-price">1 Audible Credit</p>
-                            <a href="https://amzn.to/46BhVpe" class="btn-primary audible-link" target="_blank" rel="nofollow sponsored noopener noreferrer">Get with Audible Credit → <span style="font-size: 0.8rem; opacity: 0.8;">Earn $1 bounty</span></a>
+                            <a href="https://amzn.to/46BhVpe" class="btn-primary audible-link" target="_blank" rel="nofollow sponsored noopener noreferrer">Get with Audible Credit → <span class="audiobook-bounty">Earn $1 bounty</span></a>
                         </div>
                     </div>
 
                     <!-- Audiobook 2 -->
                     <div class="product-card">
-                        <div class="product-image" style="background: linear-gradient(135deg, #2E8B57, #32CD32); color: white; font-size: 1.2rem; font-weight: bold; display: flex; align-items: center; justify-content: center; flex-direction: column;">
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">💰</div>
-                            <div style="text-align: center; line-height: 1.2;">RICH DAD<br>POOR DAD</div>
+                        <div class="product-image audiobook-cover audiobook-cover--green">
+                            <div class="audiobook-cover-icon">💰</div>
+                            <div class="audiobook-cover-title">RICH DAD<br>POOR DAD</div>
                         </div>
                         <div class="product-content">
                             <h3 class="product-title">Rich Dad Poor Dad by Robert Kiyosaki</h3>
@@ -731,15 +809,15 @@
                                 <li>Perfect for entrepreneurs</li>
                             </ul>
                             <p class="product-price">1 Audible Credit</p>
-                            <a href="https://amzn.to/3JTmrGX" class="btn-primary audible-link" target="_blank" rel="nofollow sponsored noopener noreferrer">Get with Audible Credit → <span style="font-size: 0.8rem; opacity: 0.8;">Earn $1 bounty</span></a>
+                            <a href="https://amzn.to/3JTmrGX" class="btn-primary audible-link" target="_blank" rel="nofollow sponsored noopener noreferrer">Get with Audible Credit → <span class="audiobook-bounty">Earn $1 bounty</span></a>
                         </div>
                     </div>
 
                     <!-- Audiobook 3 -->
                     <div class="product-card">
-                        <div class="product-image" style="background: linear-gradient(135deg, #4169E1, #6495ED); color: white; font-size: 1.2rem; font-weight: bold; display: flex; align-items: center; justify-content: center; flex-direction: column;">
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">⭐</div>
-                            <div style="text-align: center; line-height: 1.2;">7 HABITS<br>EFFECTIVE</div>
+                        <div class="product-image audiobook-cover audiobook-cover--blue">
+                            <div class="audiobook-cover-icon">⭐</div>
+                            <div class="audiobook-cover-title">7 HABITS<br>EFFECTIVE</div>
                         </div>
                         <div class="product-content">
                             <h3 class="product-title">The 7 Habits of Highly Effective People by Stephen Covey</h3>
@@ -755,15 +833,15 @@
                                 <li>Perfect for personal development</li>
                             </ul>
                             <p class="product-price">1 Audible Credit</p>
-                            <a href="https://amzn.to/47GqZdy" class="btn-primary audible-link" target="_blank" rel="nofollow sponsored noopener noreferrer">Get with Audible Credit → <span style="font-size: 0.8rem; opacity: 0.8;">Earn $1 bounty</span></a>
+                            <a href="https://amzn.to/47GqZdy" class="btn-primary audible-link" target="_blank" rel="nofollow sponsored noopener noreferrer">Get with Audible Credit → <span class="audiobook-bounty">Earn $1 bounty</span></a>
                         </div>
                     </div>
 
                     <!-- Audiobook 4 -->
                     <div class="product-card">
-                        <div class="product-image" style="background: linear-gradient(135deg, #8B008B, #DA70D6); color: white; font-size: 1.2rem; font-weight: bold; display: flex; align-items: center; justify-content: center; flex-direction: column;">
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">💎</div>
-                            <div style="text-align: center; line-height: 1.2;">THINK &amp;<br>GROW RICH</div>
+                        <div class="product-image audiobook-cover audiobook-cover--purple">
+                            <div class="audiobook-cover-icon">💎</div>
+                            <div class="audiobook-cover-title">THINK &amp;<br>GROW RICH</div>
                         </div>
                         <div class="product-content">
                             <h3 class="product-title">Think and Grow Rich by Napoleon Hill</h3>
@@ -779,14 +857,14 @@
                                 <li>Perfect entrepreneurial inspiration</li>
                             </ul>
                             <p class="product-price">1 Audible Credit</p>
-                            <a href="https://amzn.to/4pllYxb" class="btn-primary audible-link" target="_blank" rel="nofollow sponsored noopener noreferrer">Get with Audible Credit → <span style="font-size: 0.8rem; opacity: 0.8;">Earn $1 bounty</span></a>
+                            <a href="https://amzn.to/4pllYxb" class="btn-primary audible-link" target="_blank" rel="nofollow sponsored noopener noreferrer">Get with Audible Credit → <span class="audiobook-bounty">Earn $1 bounty</span></a>
                         </div>
                     </div>
                 </div>
 
-                <div style="background: rgba(0,0,0,0.1); padding: 1.5rem; margin-top: 2rem; border-radius: 8px; text-align: center;">
-                    <h4 style="margin-bottom: 0.5rem;">How This Works:</h4>
-                    <p style="font-size: 0.9rem; opacity: 0.8; line-height: 1.4;">
+                <div class="audiobook-steps">
+                    <h4>How This Works:</h4>
+                    <p>
                         <strong>1.</strong> Click any audiobook above → <strong>2.</strong> Use your Audible member credit → <strong>3.</strong> Start listening to great content!
                         <br><em>Each credit redemption helps support our coffee gear reviews.</em>
                     </p>
@@ -891,7 +969,6 @@
             setText('conversion-cta', copy.conversionCta);
             setText('audiobook-bottom-cta', copy.audiobookBottomCta);
 
-            document.documentElement.setAttribute('data-copy-variant', variantKey);
         }
 
         function trackCopyVariantAssignment(variantKey, isForced) {
