@@ -45,6 +45,20 @@ Build output is written to `/public`:
 3. When updating image filenames with spaces, URL-encode them in `/sitemap.xml` and structured data.
 4. Update `lastmod` in `/sitemap.xml` when major content changes are published.
 
+## A/B Copy Testing
+
+The homepage supports two copy variants:
+
+- Variant A: `?ab=a`
+- Variant B: `?ab=b`
+
+Examples:
+
+- `https://bestlistbay.com/?ab=a`
+- `https://bestlistbay.com/?ab=b`
+
+If no `ab` query parameter is present, the page assigns a variant randomly and stores it in `localStorage` using key `best_list_bay_copy_variant`.
+
 ## Deployment
 
 This repository is ready for static hosting (Vercel, GitHub Pages, Netlify, or similar).

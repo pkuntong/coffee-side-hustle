@@ -50,13 +50,27 @@
         }
         
         .hero {
-            padding: 3rem 0;
+            padding: 3rem 2rem;
             text-align: center;
             background: white;
             margin-bottom: 2rem;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 12px;
         }
-        
+
+        .hero-kicker {
+            display: inline-block;
+            margin-bottom: 1rem;
+            padding: 0.4rem 0.8rem;
+            border-radius: 999px;
+            background: #f5ebe3;
+            color: #8B4513;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
         .hero h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
@@ -68,6 +82,76 @@
             color: #666;
             max-width: 600px;
             margin: 0 auto;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            gap: 0.8rem;
+            justify-content: center;
+            margin: 1.6rem 0 0.8rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-cta {
+            border: none;
+            border-radius: 999px;
+            padding: 0.8rem 1.2rem;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .hero-cta:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+        }
+
+        .hero-cta-primary {
+            background: linear-gradient(135deg, #FF6B35, #F7931E);
+            color: #fff;
+        }
+
+        .hero-cta-secondary {
+            background: #fff;
+            color: #8B4513;
+            border: 1px solid #e4d2c1;
+        }
+
+        .hero-note {
+            font-size: 0.9rem;
+            color: #7c6f66;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0 2rem;
+        }
+
+        .trust-card {
+            background: #fff;
+            border: 1px solid #ede3db;
+            border-radius: 12px;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .trust-value {
+            font-size: 1.8rem;
+            line-height: 1;
+            color: #8B4513;
+            font-weight: 800;
+            margin-bottom: 0.4rem;
+        }
+
+        .trust-label {
+            color: #5d4f45;
+            font-size: 0.95rem;
+            font-weight: 600;
         }
         
         .products-grid {
@@ -83,6 +167,7 @@
             overflow: hidden;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
+            position: relative;
         }
         
         .product-card:hover {
@@ -155,6 +240,29 @@
             background: linear-gradient(135deg, #E55A2B, #E8831E);
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+        }
+
+        .btn-primary:focus-visible,
+        .hero-cta:focus-visible,
+        .tab-button:focus-visible {
+            outline: 3px solid rgba(255, 107, 53, 0.35);
+            outline-offset: 2px;
+        }
+
+        .top-pick-badge {
+            position: absolute;
+            z-index: 2;
+            top: 12px;
+            left: 12px;
+            background: #2c1810;
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            border-radius: 999px;
+            padding: 0.35rem 0.7rem;
+            text-transform: uppercase;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.2);
         }
         
         .rating {
@@ -253,15 +361,46 @@
             display: block !important;
         }
 
+        .conversion-panel {
+            background: #f9f4ef;
+            border: 1px solid #ebddd0;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        .conversion-panel h4 {
+            margin-bottom: 0.4rem;
+            color: #2c1810;
+        }
+
+        .conversion-panel p {
+            margin-bottom: 1rem;
+            color: #65584f;
+        }
+
         @media (max-width: 768px) {
+            .hero {
+                padding: 2.2rem 1.2rem;
+            }
+
             .hero h1 {
                 font-size: 2rem;
             }
-            
+
             .products-grid {
                 grid-template-columns: 1fr;
             }
-            
+
+            .hero-cta-group {
+                flex-direction: column;
+            }
+
+            .hero-cta {
+                width: 100%;
+            }
+
             .tab-button {
                 padding: 1rem 1rem;
                 font-size: 1rem;
@@ -279,25 +418,47 @@
 
     <main class="container">
         <div class="hero">
-            <h1>Best Products: Expert Reviews and Smart Deals</h1>
-            <p>Discover top-rated coffee equipment and trending audiobooks that people actually recommend. From budget-friendly finds to premium picks - we curate the best products worth your money with honest reviews and exclusive deals.</p>
+            <p id="hero-kicker" class="hero-kicker">Independent picks, updated weekly</p>
+            <h1 id="hero-title">Best Products: Expert Reviews and Smart Deals</h1>
+            <p id="hero-description">Discover top-rated coffee equipment and trending audiobooks that people actually recommend. From budget-friendly finds to premium picks - we curate the best products worth your money with honest reviews and exclusive deals.</p>
+            <div class="hero-cta-group">
+                <button id="hero-cta-primary" type="button" class="hero-cta hero-cta-primary" data-tab-target="coffee">Shop Coffee Picks</button>
+                <button id="hero-cta-secondary" type="button" class="hero-cta hero-cta-secondary" data-tab-target="audiobooks">Browse Audiobooks</button>
+            </div>
+            <p id="hero-note" class="hero-note">Prices and stock change frequently. Use the buttons below to open the latest Amazon and Audible listings.</p>
         </div>
 
         <div class="disclaimer">
             <strong>Affiliate Disclosure:</strong> We may earn a commission if you purchase through our links, at no extra cost to you. This helps support our independent reviews.
         </div>
 
+        <section class="trust-grid" aria-label="Recommendation highlights">
+            <article class="trust-card">
+                <p class="trust-value">9</p>
+                <p id="trust-label-1" class="trust-label">Coffee gear recommendations</p>
+            </article>
+            <article class="trust-card">
+                <p class="trust-value">4</p>
+                <p id="trust-label-2" class="trust-label">Audiobook recommendations</p>
+            </article>
+            <article class="trust-card">
+                <p class="trust-value">100%</p>
+                <p id="trust-label-3" class="trust-label">Affiliate links clearly disclosed</p>
+            </article>
+        </section>
+
         <!-- Tab Navigation -->
-        <div class="tab-navigation" role="tablist" aria-label="Browse product categories">
-            <button id="coffee-tab" type="button" class="tab-button" role="tab" aria-controls="coffee-content" aria-selected="false" tabindex="-1" onclick="switchTab('coffee', this)">☕ Coffee Gear</button>
-            <button id="audiobooks-tab" type="button" class="tab-button active" role="tab" aria-controls="audiobooks-content" aria-selected="true" tabindex="0" onclick="switchTab('audiobooks', this)">🎧 Audiobooks</button>
+        <div id="category-tabs" class="tab-navigation" role="tablist" aria-label="Browse product categories">
+            <button id="coffee-tab" type="button" class="tab-button active" role="tab" aria-controls="coffee-content" aria-selected="true" tabindex="0" onclick="switchTab('coffee', this)">☕ Coffee Gear</button>
+            <button id="audiobooks-tab" type="button" class="tab-button" role="tab" aria-controls="audiobooks-content" aria-selected="false" tabindex="-1" onclick="switchTab('audiobooks', this)">🎧 Audiobooks</button>
         </div>
 
         <!-- Coffee Tab Content -->
-        <div id="coffee-content" class="tab-content-area" role="tabpanel" aria-labelledby="coffee-tab" hidden>
+        <div id="coffee-content" class="tab-content-area active" role="tabpanel" aria-labelledby="coffee-tab">
             <div class="products-grid">
             <!-- Product 1 -->
-            <div class="product-card">
+            <div class="product-card" id="coffee-top-pick">
+                <span class="top-pick-badge">Top Pick</span>
                 <div class="product-image">
                     <img loading="lazy" decoding="async" src="images/black-rifle.jpg" alt="Black Rifle Coffee CAF - Premium Coffee Beans with Tactical Design" onerror="handleImageError(this, 'Black Rifle Coffee');">
                 </div>
@@ -509,10 +670,16 @@
                 </div>
             </div>
         </div>
+
+            <div class="conversion-panel">
+                <h4 id="conversion-title">Ready to upgrade your brew setup?</h4>
+                <p id="conversion-description">Start with our highest-rated daily-driver pick and compare from there.</p>
+                <a id="conversion-cta" href="https://amzn.to/4nYiL6g" class="btn-primary" data-product-name="Black Rifle Coffee" target="_blank" rel="nofollow sponsored noopener noreferrer">Shop the Top Coffee Pick →</a>
+            </div>
         </div>
 
         <!-- Audiobooks Tab Content -->
-        <div id="audiobooks-content" class="tab-content-area active" role="tabpanel" aria-labelledby="audiobooks-tab">
+        <div id="audiobooks-content" class="tab-content-area" role="tabpanel" aria-labelledby="audiobooks-tab" hidden>
             <div style="background: linear-gradient(135deg, #8B4513, #A0522D); color: white; padding: 2rem; margin-bottom: 2rem; border-radius: 10px; text-align: center;">
                 <h2 style="margin-bottom: 1rem; font-size: 2.2rem;">🎧 Coffee Culture &amp; Learning</h2>
                 <p style="font-size: 1.1rem; opacity: 0.9;">Enhance your coffee journey with audiobooks on entrepreneurship, food culture, and business - perfect for your morning brew routine</p>
@@ -520,7 +687,8 @@
             
             <div class="products-grid">
                     <!-- Audiobook 1 -->
-                    <div class="product-card">
+                    <div class="product-card" id="audiobook-top-pick">
+                        <span class="top-pick-badge">Top Pick</span>
                         <div class="product-image" style="background: linear-gradient(135deg, #FF6B35, #F7931E); color: white; font-size: 1.2rem; font-weight: bold; display: flex; align-items: center; justify-content: center; flex-direction: column;">
                             <div style="font-size: 2rem; margin-bottom: 0.5rem;">📚</div>
                             <div style="text-align: center; line-height: 1.2;">ATOMIC<br>HABITS</div>
@@ -622,6 +790,7 @@
                         <strong>1.</strong> Click any audiobook above → <strong>2.</strong> Use your Audible member credit → <strong>3.</strong> Start listening to great content!
                         <br><em>Each credit redemption helps support our coffee gear reviews.</em>
                     </p>
+                    <a id="audiobook-bottom-cta" href="https://amzn.to/46BhVpe" class="btn-primary audible-link" data-product-name="Atomic Habits by James Clear" target="_blank" rel="nofollow sponsored noopener noreferrer">Start with Atomic Habits →</a>
                 </div>
             </div>
     </main>
@@ -634,6 +803,106 @@
     </footer>
 
     <script>
+        const COPY_VARIANT_STORAGE_KEY = 'best_list_bay_copy_variant';
+        const COPY_VARIANTS = {
+            a: {
+                heroKicker: 'Independent picks, updated weekly',
+                heroTitle: 'Best Products: Expert Reviews and Smart Deals',
+                heroDescription: 'Discover top-rated coffee equipment and trending audiobooks that people actually recommend. From budget-friendly finds to premium picks - we curate the best products worth your money with honest reviews and exclusive deals.',
+                heroCtaPrimary: 'Shop Coffee Picks',
+                heroCtaSecondary: 'Browse Audiobooks',
+                heroNote: 'Prices and stock change frequently. Use the buttons below to open the latest Amazon and Audible listings.',
+                trustLabel1: 'Coffee gear recommendations',
+                trustLabel2: 'Audiobook recommendations',
+                trustLabel3: 'Affiliate links clearly disclosed',
+                conversionTitle: 'Ready to upgrade your brew setup?',
+                conversionDescription: 'Start with our highest-rated daily-driver pick and compare from there.',
+                conversionCta: 'Shop the Top Coffee Pick →',
+                audiobookBottomCta: 'Start with Atomic Habits →'
+            },
+            b: {
+                heroKicker: 'Skip the noise and buy with confidence',
+                heroTitle: 'Stop Guessing. Get Better Coffee Gear and Audiobooks.',
+                heroDescription: 'We shortlist proven favorites so you can skip research and go straight to products people keep recommending.',
+                heroCtaPrimary: 'See Best Coffee Deals',
+                heroCtaSecondary: 'Find Top Audible Picks',
+                heroNote: 'Fast picks for busy shoppers: compare top options and open the latest listings in one click.',
+                trustLabel1: 'Handpicked coffee products',
+                trustLabel2: 'High-signal audiobook picks',
+                trustLabel3: 'Transparent affiliate disclosure',
+                conversionTitle: 'Want the easiest win first?',
+                conversionDescription: 'Start with our most-clicked coffee recommendation, then compare alternatives in minutes.',
+                conversionCta: 'Get the Most-Clicked Coffee Pick →',
+                audiobookBottomCta: 'Claim Atomic Habits on Audible →'
+            }
+        };
+
+        function setText(id, value) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.textContent = value;
+            }
+        }
+
+        function resolveCopyVariant() {
+            const params = new URLSearchParams(window.location.search);
+            const forced = params.get('ab');
+            if (forced === 'a' || forced === 'b') {
+                try {
+                    window.localStorage.setItem(COPY_VARIANT_STORAGE_KEY, forced);
+                } catch (error) {
+                    // Ignore storage failures in private browsing modes.
+                }
+                return { variant: forced, forced: true };
+            }
+
+            try {
+                const stored = window.localStorage.getItem(COPY_VARIANT_STORAGE_KEY);
+                if (stored === 'a' || stored === 'b') {
+                    return { variant: stored, forced: false };
+                }
+            } catch (error) {
+                // Ignore storage failures in private browsing modes.
+            }
+
+            const assigned = Math.random() < 0.5 ? 'a' : 'b';
+            try {
+                window.localStorage.setItem(COPY_VARIANT_STORAGE_KEY, assigned);
+            } catch (error) {
+                // Ignore storage failures in private browsing modes.
+            }
+            return { variant: assigned, forced: false };
+        }
+
+        function applyCopyVariant(variantKey) {
+            const copy = COPY_VARIANTS[variantKey] || COPY_VARIANTS.a;
+
+            setText('hero-kicker', copy.heroKicker);
+            setText('hero-title', copy.heroTitle);
+            setText('hero-description', copy.heroDescription);
+            setText('hero-cta-primary', copy.heroCtaPrimary);
+            setText('hero-cta-secondary', copy.heroCtaSecondary);
+            setText('hero-note', copy.heroNote);
+            setText('trust-label-1', copy.trustLabel1);
+            setText('trust-label-2', copy.trustLabel2);
+            setText('trust-label-3', copy.trustLabel3);
+            setText('conversion-title', copy.conversionTitle);
+            setText('conversion-description', copy.conversionDescription);
+            setText('conversion-cta', copy.conversionCta);
+            setText('audiobook-bottom-cta', copy.audiobookBottomCta);
+
+            document.documentElement.setAttribute('data-copy-variant', variantKey);
+        }
+
+        function trackCopyVariantAssignment(variantKey, isForced) {
+            if (typeof window.gtag === 'function') {
+                window.gtag('event', 'copy_variant_assigned', {
+                    variant: variantKey,
+                    forced: isForced ? 'true' : 'false'
+                });
+            }
+        }
+
         function handleImageError(imageElement, fallbackLabel) {
             imageElement.onerror = null;
             imageElement.src = 'images/black-rifle.jpg';
@@ -643,7 +912,8 @@
         function trackAffiliateClick(buttonElement) {
             const productCard = buttonElement.closest('.product-card');
             const productTitleElement = productCard ? productCard.querySelector('.product-title') : null;
-            const productTitle = productTitleElement ? productTitleElement.textContent.trim() : 'Unknown product';
+            const fallbackTitle = buttonElement.getAttribute('data-product-name');
+            const productTitle = productTitleElement ? productTitleElement.textContent.trim() : (fallbackTitle || 'Unknown product');
             const eventName = buttonElement.classList.contains('audible-link') ? 'audible_click' : 'product_click';
 
             if (typeof window.gtag === 'function') {
@@ -652,6 +922,11 @@
         }
 
         function switchTab(tabName, activeButton) {
+            const resolvedButton = activeButton || document.getElementById(tabName + '-tab');
+            if (!resolvedButton) {
+                return;
+            }
+
             document.querySelectorAll('.tab-content-area').forEach(panel => {
                 const isActive = panel.id === tabName + '-content';
                 panel.classList.toggle('active', isActive);
@@ -659,11 +934,25 @@
             });
 
             document.querySelectorAll('.tab-button').forEach(button => {
-                const isActive = button === activeButton;
+                const isActive = button === resolvedButton;
                 button.classList.toggle('active', isActive);
                 button.setAttribute('aria-selected', String(isActive));
                 button.tabIndex = isActive ? 0 : -1;
             });
+        }
+
+        function openTabFromCta(tabName) {
+            const targetButton = document.getElementById(tabName + '-tab');
+            if (!targetButton) {
+                return;
+            }
+
+            switchTab(tabName, targetButton);
+
+            const targetPanel = document.getElementById(tabName + '-content');
+            if (targetPanel) {
+                targetPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
         }
 
         function handleTabKeydown(event) {
@@ -689,6 +978,10 @@
         }
 
         document.addEventListener('DOMContentLoaded', () => {
+            const { variant, forced } = resolveCopyVariant();
+            applyCopyVariant(variant);
+            trackCopyVariantAssignment(variant, forced);
+
             document.querySelectorAll('.btn-primary').forEach(button => {
                 button.addEventListener('click', () => trackAffiliateClick(button));
             });
@@ -697,14 +990,29 @@
                 button.addEventListener('keydown', handleTabKeydown);
             });
 
+            document.querySelectorAll('[data-tab-target]').forEach(ctaButton => {
+                ctaButton.addEventListener('click', () => {
+                    const tabName = ctaButton.getAttribute('data-tab-target');
+                    if (!tabName) {
+                        return;
+                    }
+
+                    openTabFromCta(tabName);
+
+                    if (typeof window.gtag === 'function') {
+                        window.gtag('event', 'category_cta_click', { target_tab: tabName });
+                    }
+                });
+            });
+
             const yearElement = document.getElementById('current-year');
             if (yearElement) {
                 yearElement.textContent = String(new Date().getFullYear());
             }
 
-            const defaultTab = document.getElementById('audiobooks-tab');
+            const defaultTab = document.getElementById('coffee-tab');
             if (defaultTab) {
-                switchTab('audiobooks', defaultTab);
+                switchTab('coffee', defaultTab);
             }
         });
     </script>
